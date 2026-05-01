@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Breathing Tree</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/addons/p5.sound.min.js" defer></script>
+  <script src="./sketch.js" defer></script>
+</head>
+<body>
+  <section id="controls">
+    <button id="startBtn">Start mic</button>
+    <p id="msg">Click start and breathe near the mic.</p>
+    <label for="senseSlider">Sensitivity</label>
+    <input id="senseSlider" type="range" min="1" max="8" step="0.1" value="4.5" />
+    <p>Breath: <span id="breathText">0</span>%</p>
+    <p>Raw mic: <span id="rawText">0</span></p>
+    <p>Angle: <span id="angleText">0</span></p>
+  </section>
+</body>
+</html>
